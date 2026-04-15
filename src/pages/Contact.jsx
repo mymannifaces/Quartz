@@ -9,7 +9,7 @@ function Contact() {
         <h1>Contact</h1>
         <div className='profile-container'>
           <img 
-            src="src/assets/Lo-Fi Manni.png" 
+            src="src/assets/profile.png" 
             alt="profile pic"
             style={{
               width: '200px',
