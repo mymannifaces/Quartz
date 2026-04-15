@@ -1,0 +1,163 @@
+
+:root {
+    --background: #fdf9f0;
+    --text-primary: #ce407a;
+    --text-secondary: #fdaecb;
+    --accent: #feded3;
+    --border: ;
+}
+
+/* NavBar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--text-primary);
+    color: var(--background);
+    font-size: 1.5rem;
+    font: bold;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--background);
+}
+
+nav a:hover {
+    color: #26739d;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+
+.active {
+    background-color: var(--text-secondary);
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: var(--background);
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 480px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        /* width: 100%; */
+        margin-bottom: 0.25rem;
+        position: relative;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        /* width: 100%; */
+        text-align: start;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+
+}
+
+/* NavBar End */
+
+/* Main */
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--background);
+    color: var(--text-primary);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main End */
+
+.btn {
+    background: var(--text-secondary);
+    color: var(--background);
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #26739d;
+}
+
+.icon-link {
+  text-decoration: none !important;
+}
