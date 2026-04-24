@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router'
+import RollDice from './RollDice'
 
 function NavBar() {
   const [ menuOpen, setMenuOpen ] = useState(false)
@@ -15,6 +16,9 @@ function NavBar() {
             <span></span>
         </div>
         <ul className={menuOpen ? "open" : ""}>
+          <li>
+            <button className='btn' onClick={() => RollDice(20)}>Roll Dice</button>
+          </li>
           <li>
             <NavLink to='/about'>About</NavLink>
           </li>
